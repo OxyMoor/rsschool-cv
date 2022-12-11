@@ -1,1 +1,1 @@
-# rsschool-cv
+https://OxyMoor.github.io/rsschool-cv/cv
