@@ -15,3 +15,19 @@ Responsible, assiduous, hardworking. I know how to correctly allocate time. Due 
 * Git
 * Manual testing
 * English - A2/B1 Pre-Intermediate
+
+## Code example
+This is the code for responsive burger menu:
+```
+const navBtn = document.querySelector('.nav-open-btn');
+const navBtnImg = document.querySelector('.nav-btn-img');
+const nav = document.querySelector('.nav');
+
+navBtn.addEventListener('click', () => {
+    if (nav.classList.toggle('open')) {
+        navBtnImg.src = './img/header/close-menu-btn.svg'
+    } else {
+        navBtnImg.src = './img/header/open-menu-btn.svg'
+    }
+});
+```
