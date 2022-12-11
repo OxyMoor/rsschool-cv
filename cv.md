@@ -31,3 +31,14 @@ navBtn.addEventListener('click', () => {
     }
 });
 ```
+
+## Work experience
+I have no commercial development experience, but I have some training projects:
+1. * Rolling Scopes School / Training project: Museum (Course: JavaScript / Front-end)
+* SEPTEMBER 2021, Minsk
+* The project is a site of a museum, including 6 sections: "visiting", "explore", "video", "gallery", "tickets", "contacts".
+* [Project on github](https://github.com/OxyMoor/Museum)
+2. * Rolling Scopes School / Training project: art-quiz (Course: JavaScript / Front-end)
+* NOVEMBER  2021, Minsk
+* The project is an art quiz game.
+* [Project on github](https://github.com/OxyMoor/art-quiz)
