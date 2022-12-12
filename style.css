@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1b1b1b;
+}
+
+.header, .main, .footer {
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1000px;
+}
+
+.section {
+    padding-top: 30px;
+    padding-bottom:30px;
+}
+
+.section-title {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #f3cf00;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+}
+
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.header-inner {
+    display: flex;
+}
+
+.avatar {
+    width: 200px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.header-title {
+    font-size: 50px;
+}
+
+.job-title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #494949;
+}
+
+.contacts-list {
+    list-style: none;
+}
+
+.contacts-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.summary {
+    background: #f3cf00;
+}
+
+.skills-code-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.skills {
+    width: 40%;
+}
+
+.skills-list {
+    padding-left: 15px;
+}
+
+.skills-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.code {
+    width: 60%;
+}
+
+.code-description {
+    color: #272727;
+    margin-bottom: 30px;
+}
+
+.code code {
+    color: #c5c5c5;
+    background: #272727;
+}
+
+.projects {
+    background: #272727;
+}
+
+.projects .section-title {
+    padding: 10px;
+    background: #ffffff;
+}
+
+.projects-description {
+    color: #c5c5c5;
+    margin-bottom: 15px;
+}
+
+.projects-list {
+    padding-left: 15px;
+    color: #f3cf00;
+}
+
+.projects-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.project-title {
+    color: #f3cf00;
+    margin-bottom: 15px;
+}
+
+.project-date {
+    color: #858585;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    color: #c5c5c5;
+    margin-bottom: 10px;
+}
+
+.project-link {
+    color: #f3cf00;
+}
+
+.education-list {
+    padding-left: 15px;
+}
+
+.education-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background: #f3cf00;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.github-link, .rss-link {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.github-icon {
+    width: 60px;
+}
+
+.rss-logo {
+    width: 150px;
+}
+
+.github-icon, .rss-logo {
+    margin-right: 15px;   
+}

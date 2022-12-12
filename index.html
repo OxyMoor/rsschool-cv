@@ -16,22 +16,22 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="" class="nav-link">Summary</a>
+                        <a href="#summary" class="nav-link">Summary</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Contacts</a>
+                        <a href="#contacts" class="nav-link">Contacts</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Skills</a>
+                        <a href="#skills" class="nav-link">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Code examples</a>
+                        <a href="#code" class="nav-link">Code examples</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Projects</a>
+                        <a href="#projects" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Education</a>
+                        <a href="#education" class="nav-link">Education</a>
                     </li>
                 </ul>
             </nav>
@@ -40,12 +40,22 @@
                 <div class="header-title-wrap">
                     <h1 class="header-title">Oksana Moor</h1>
                     <p class="job-title">Front-end Developer</p>
+                    <h2 class="section-title" id="contacts">Contacts</h2>
+                    <ul class="contacts-list">
+                        <li class="contacts-item">Minsk</li>
+                        <li class="contacts-item">
+                            <a href="https://t.me/Oxy_Moor" class="contacts-link">telegram: @Oxy_Moor</a>
+                        </li>
+                        <li class="contacts-item">
+                            <a href="mailto:hikki0019@gmail.com" class="contacts-link">email: hikki0019@gmail.com</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="section summary">
+        <section class="section summary" id="summary">
             <div class="container">
                 <h2 class="section-title">Summary</h2>
                 <p class="summary-description">
@@ -53,46 +63,49 @@
                 </p>
             </div>
         </section>
-        <section class="section skills">
-            <div class="container">
-                <h2 class="section-title">Skills</h2>
-                <ul class="skills-list">
-                    <li class="skills-item">HTML 5</li>
-                    <li class="skills-item">CSS 3 (flex, grid, SCSS/SASS, Bootstrap)</li>
-                    <li class="skills-item">JavaScript basic (Data types, cycles, functions, JS scope, BOM, DOM events, OOP, Event loop, JS animation, JSON)</li>
-                    <li class="skills-item">Webpack</li>
-                    <li class="skills-item">Git</li>
-                    <li class="skills-item">Manual testing</li>
-                    <li class="skills-item">English - A2/B1 Pre-Intermediate</li>
-                </ul>
-            </div>
-        </section>
-        <section class="section code">
-            <div class="container">
-                <h2 class="section-title">Code examples</h2>
-                <p class="code-description">
-                    This is the code for responsive burger menu:
-                </p>
-                <p>
-                    <code>
-                        const navBtn = document.querySelector('.nav-open-btn');<br>
-                        const navBtnImg = document.querySelector('.nav-btn-img');<br>
-                        const nav = document.querySelector('.nav');<br>
+        <div class="skills-code-wrap">
+            <section class="section skills" id="skills">
+                <div class="container">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="skills-list">
+                        <li class="skills-item">HTML 5</li>
+                        <li class="skills-item">CSS 3 (flex, grid, SCSS/SASS, Bootstrap)</li>
+                        <li class="skills-item">JavaScript basic (Data types, cycles, functions, JS scope, BOM, DOM events, OOP, Event loop, JS animation, JSON)</li>
+                        <li class="skills-item">Webpack</li>
+                        <li class="skills-item">Git</li>
+                        <li class="skills-item">Manual testing</li>
+                        <li class="skills-item">English - A2/B1 Pre-Intermediate</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section code" id="code">
+                <div class="container">
+                    <h2 class="section-title">Code examples</h2>
+                    <p class="code-description">
+                        This is the code for responsive burger menu:
+                    </p>
+                    <p>
+                        <code>
+                            <pre>const navBtn = document.querySelector('.nav-open-btn');
+const navBtnImg = document.querySelector('.nav-btn-img');
+const nav = document.querySelector('.nav');
 
-                        navBtn.addEventListener('click', () => {<br>
-                            if (nav.classList.toggle('open')) {<br>
-                                navBtnImg.src = './img/header/close-menu-btn.svg'<br>
-                            } else {<br>
-                                navBtnImg.src = './img/header/open-menu-btn.svg'<br>
-                            }<br>
-                        });
-                    </code>
-                </p>
-            </div>
-        </section>
-        <section class="section projects">
+navBtn.addEventListener('click', () => {
+    if (nav.classList.toggle('open')) {
+        navBtnImg.src = './img/header/close-menu-btn.svg'
+    } else {
+        navBtnImg.src = './img/header/open-menu-btn.svg'
+    }
+});</pre>
+                            
+                        </code>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <section class="section projects" id="projects">
             <div class="container">
-                <h2 class="section-title">Work experience</h2>
+                <h2 class="section-title">Projects</h2>
                 <p class="projects-description">
                     I have no commercial development experience, but I have some training projects:
                 </p>
@@ -112,7 +125,7 @@
                 </ol>
             </div>
         </section>
-        <section class="section education">
+        <section class="section education" id="education">
             <div class="container">
                 <h2 class="section-title">Education</h2>
                 <ol class="education-list">
@@ -127,15 +140,17 @@
         </section>
     </main>
     <footer class="footer">
-        <a class="github-link" href="https://github.com/OxyMoor">
-            <img class="github-icon" src="github.svg" alt="icon: github">
-            <span class="me-on-github">See me on Github</span>
-        </a>
-        <div class="rss-wrap">
-            <img class="rss-logo" src="rs_school_js.svg" alt="icon: rss logo">
-            <a class="rss-link" href="https://rs.school/js/">RSS JavaScript/Front-end</a>
+        <div class="container">
+            <a class="github-link" href="https://github.com/OxyMoor">
+                <img class="github-icon" src="github.svg" alt="icon: github">
+                <span class="me-on-github">See me on Github</span>
+            </a>
+            <a class="rss-link" href="https://rs.school/js/">
+                <img class="rss-logo" src="rs_school_js.svg" alt="icon: rss logo">
+                <span class="rss-course">RSS JavaScript/Front-end</span>
+            </a>
+            <span class="year">2022</span>
         </div>
-        <span class="year">2022</span>
     </footer>
 </body>
 </html>
