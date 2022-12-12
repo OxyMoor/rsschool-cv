@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oksana Moor CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#summary" class="nav-link">Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#code" class="nav-link">Code examples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-inner">
+                <img class="avatar" src="avatar.jpg" alt="image: Moor O. avatar">
+                <div class="header-title-wrap">
+                    <h1 class="header-title">Oksana Moor</h1>
+                    <p class="job-title">Front-end Developer</p>
+                    <h2 class="section-title" id="contacts">Contacts</h2>
+                    <ul class="contacts-list">
+                        <li class="contacts-item">Minsk</li>
+                        <li class="contacts-item">
+                            <a href="https://t.me/Oxy_Moor" class="contacts-link">telegram: @Oxy_Moor</a>
+                        </li>
+                        <li class="contacts-item">
+                            <a href="mailto:hikki0019@gmail.com" class="contacts-link">email: hikki0019@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section summary" id="summary">
+            <div class="container">
+                <h2 class="section-title">Summary</h2>
+                <p class="summary-description">
+                    Responsible, assiduous, hardworking. I know how to correctly allocate time. Due to my pharmaceutical education and work as a pharmacist, I can find a common language with people, resolve conflicts, study a lot of information in a short time. I am currently looking for a job as a Front-end Developer after successfully completing relevant
+                </p>
+            </div>
+        </section>
+        <div class="skills-code-wrap">
+            <section class="section skills" id="skills">
+                <div class="container">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="skills-list">
+                        <li class="skills-item">HTML 5</li>
+                        <li class="skills-item">CSS 3 (flex, grid, SCSS/SASS, Bootstrap)</li>
+                        <li class="skills-item">JavaScript basic (Data types, cycles, functions, JS scope, BOM, DOM events, OOP, Event loop, JS animation, JSON)</li>
+                        <li class="skills-item">Webpack</li>
+                        <li class="skills-item">Git</li>
+                        <li class="skills-item">Manual testing</li>
+                        <li class="skills-item">English - A2/B1 Pre-Intermediate</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section code" id="code">
+                <div class="container">
+                    <h2 class="section-title">Code examples</h2>
+                    <p class="code-description">
+                        This is the code for responsive burger menu:
+                    </p>
+                    <pre>
+                        <code>
+const navBtn = document.querySelector('.nav-open-btn');
+const navBtnImg = document.querySelector('.nav-btn-img');
+const nav = document.querySelector('.nav');
+
+navBtn.addEventListener('click', () => {
+    if (nav.classList.toggle('open')) {
+        navBtnImg.src = './img/header/close-menu-btn.svg'
+    } else {
+        navBtnImg.src = './img/header/open-menu-btn.svg'
+    }
+});</code>
+                    </pre>
+                </div>
+            </section>
+        </div>
+        <section class="section projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <p class="projects-description">
+                    I have no commercial development experience, but I have some training projects:
+                </p>
+                <ol class="projects-list">
+                    <li class="projects-item">
+                        <h3 class="project-title">Rolling Scopes School / Training project: Museum (Course: JavaScript / Front-end)</h3>
+                        <p class="project-date">SEPTEMBER 2021, Minsk</p>
+                        <p class="project-description">The project is a site of a museum, including 6 sections: "visiting", "explore", "video", "gallery", "tickets", "contacts".</p>
+                        <a class="project-link" href="https://github.com/OxyMoor/Museum">Project on github</a>
+                    </li>
+                    <li class="projects-item">
+                        <h3 class="project-title">Rolling Scopes School / Training project: art-quiz (Course: JavaScript / Front-end)</h3>
+                        <p class="project-date">NOVEMBER  2021, Minsk</p>
+                        <p class="project-description">The project is an art quiz game.</p>
+                        <a class="project-link" href="https://github.com/OxyMoor/art-quiz">Project on github</a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="section education" id="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <ol class="education-list">
+                    <li class="education-item">Rolling Scopes School / Course: JavaScript / Front-end (SEPTEMBER 2021 - DECEMBER 2021, Minsk)</li>
+                    <li class="education-item">Educational Center for Programming and High Tech (IT-Academy) / Course: Web application development with JavaScript (DECEMBER 2020 - MARCH 2021, Minsk)</li>
+                    <li class="education-item">Educational Center for Programming and High Tech (IT-Academy) / Course: Website development using HTML, CSS and JavaScript (AUGUST 2020 - NOVEMBER 2020, Minsk)</li>
+                    <li class="education-item">European Software Development Center (Belhard Academy) / Course: Basics of website development (APRIL  2020 - MAY 2020, Minsk)</li>
+                    <li class="education-item">A1QA / Course: Basics of software testing (2019, Minsk)</li>
+                    <li class="education-item">Belorussian state medical university / Faculty: Pharmaceutical (SEPTEMBER  2013 - JUNE 2018, Minsk)</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <a class="github-link" href="https://github.com/OxyMoor">
+                <img class="github-icon" src="github.svg" alt="icon: github">
+                <span class="me-on-github">See me on Github</span>
+            </a>
+            <a class="rss-link" href="https://rs.school/js/">
+                <img class="rss-logo" src="rs_school_js.svg" alt="icon: rss logo">
+                <span class="rss-course">RSS JavaScript/Front-end</span>
+            </a>
+            <span class="year">2022</span>
+        </div>
+    </footer>
+</body>
+</html>
